@@ -54,7 +54,7 @@ body {
    ========================= */
 .image {
   width: 400px;
-  margin: 0 auto;
+  padding: var(--spacing);
 }
 
 /* =========================
