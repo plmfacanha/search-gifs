@@ -68,7 +68,8 @@ body {
    ========================= */
 
 header,
-footer {
+footer,
+form {
   padding: var(--spacing);
 }
 
