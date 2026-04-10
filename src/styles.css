@@ -143,4 +143,6 @@ footer {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
+
+  border-top: 1px solid var(--color-muted);
 }
