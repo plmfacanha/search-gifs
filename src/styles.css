@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+/* =========================
+   ROOT VARIABLES
+   ========================= */
+
+:root {
+  /* Font */
+  --font-main: "Inter", sans-serif;
+  --text-size-large: 1.5rem;
+  --text-size-small: 0.875rem;
+
+  /* Colors */
+  --color-dark: #0b0b0c;
+  --color-muted: #5c6784;
+  --color-calm: #a0eade;
+  --color-light: #fafdf6;
+  --color-accent: #ffffff;
+
+  /* Defaults */
+  --text-color: var(--color-dark);
+  --background-color: var(--color-light);
+
+  /* Layout */
+  --max-width: 1300px;
+  --spacing: 1rem;
+}
+
+/* =========================
+   RESET / BASE
+   ========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-main);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.5;
+}
+
+/* =========================
+   WRAPPER (STICKY FOOTER)
+   ========================= */
+
+#wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing);
+  border: 2px solid var(--color-dark);
+}
+
+/* =========================
+   SEMANTIC LAYOUT
+   ========================= */
+
+header,
+footer {
+  padding: var(--spacing);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+span {
+  color: var(--color-dark);
+}
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-dark);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* =========================
+   MEDIA (RULE OF THUMB)
+   ========================= */
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================
+   LINKS & FORMS
+   ========================= */
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
