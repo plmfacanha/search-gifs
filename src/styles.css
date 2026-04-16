@@ -10,11 +10,11 @@
   --text-size-small: 0.875rem;
 
   /* Colors */
-  --color-dark: #0b0b0c;
-  --color-muted: #5c6784;
-  --color-calm: #c5e5f5;
-  --color-light: #fafdf6;
-  --color-accent: #ffffff;
+  --color-dark: #0a0908;
+  --color-muted: #22333b;
+  --color-accent: #5e503f;
+  --color-calm: #c6ac8f;
+  --color-light: #eae0d5;
 
   /* Defaults */
   --text-color: var(--color-dark);
@@ -49,12 +49,38 @@ body {
   line-height: 1.5;
 }
 
+/* invalid fields */
+input:invalid {
+  border-color: #990000;
+  background-color: #ffdddd;
+}
+
+div * {
+  display: block;
+}
+
 /* =========================
    CLASSSES
    ========================= */
 .image {
   width: 400px;
   padding: var(--spacing);
+}
+
+.error {
+  width: 221px;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: #990000;
+  border-radius: 0 0 5px 5px;
+
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
 }
 
 /* =========================
@@ -71,7 +97,7 @@ body {
   box-shadow:
     -3px 0 2px var(--color-light),
     3px 0 2px var(--color-light);
-  background-color: var(--color-accent);
+  background-color: var(--color-light);
 }
 
 /* =========================
